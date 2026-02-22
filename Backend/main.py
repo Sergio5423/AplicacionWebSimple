@@ -28,3 +28,26 @@ def save(contacto: Contact):
 async def create_contact(contacto: Contact):
     save(contacto)
     return {"message": "Contacto Guardado con éxito", "contacto": contacto}
+
+
+## Agregando la funcionalidad de ver contactos (Joseph A.)
+
+@app.get("/contactos/")
+async def get_contactos():
+    contactos_lista = []
+
+    if os.path.exists("contactos/contactos.txt"):
+        with open("contactos/contactos.txt", "r") as f:
+            lineas = f.readlines()
+
+        for linea in lineas:
+            if linea.strip():
+                nombre, apellido, telefono, correo = linea.strip().split(",")
+                contactos_lista.append({
+                    "nombre": nombre,
+                    "apellido": apellido,
+                    "telefono": telefono,
+                    "correo": correo
+                })
+
+    return contactos_lista

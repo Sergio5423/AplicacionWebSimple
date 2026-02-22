@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda Telefónica</title>
+</head>
+<body>
+    <h1>Agregar contacto</h1>
+    <form id="contactForm">
+        <p>
+            Nombre:
+            <input name="nombre" type="text" autocomplete="off">
+        </p>
+        <p>
+            Apellido:
+            <input name="apellido" type="text" autocomplete="off">
+        </p>
+        <p>
+            Teléfono:
+            <input name="telefono" type="tel" autocomplete="off">
+        </p>
+        <p>
+            Correo:
+            <input name="correo" type="email" autocomplete="off">
+        </p>
+        <!-- type="button" evita que la página se recargue automáticamente -->
+        <button type="button" id="btnEnviar">Guardar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

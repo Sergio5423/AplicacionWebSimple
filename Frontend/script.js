@@ -10,14 +10,17 @@ document.getElementById('btnEnviar').addEventListener('click', function () {
         body: JSON.stringify({ nombre, apellido, telefono, correo })
     })
     .then(response => response.json())
-    .then(data => alert('Éxito: ' + data.message))
+    .then(data => {
+        alert('Éxito: ' + data.message);
+        cargarContactos(); // Recargar tras guardar
+    })
     .catch(error => console.error('Error:', error));
 });
 
 document.getElementById('btnCargar').addEventListener('click', cargarContactos);
 
 function cargarContactos() {
-    fetch('http://127.0.0.1:8000/contactos')
+    fetch('http://127.0.0.1:8000/contactos/')
         .then(response => response.json())
         .then(data => {
             const lista = document.getElementById('listaContactos');
@@ -25,11 +28,33 @@ function cargarContactos() {
 
             data.forEach(contacto => {
                 const li = document.createElement('li');
-                li.textContent = `${contacto.nombre} ${contacto.apellido} - ${contacto.telefono} - ${contacto.correo}`;
+                li.style.marginBottom = "10px";
+                li.textContent = `[ID: ${contacto.id}] ${contacto.nombre} ${contacto.apellido} - ${contacto.telefono}`;
+
+                const btnEliminar = document.createElement('button');
+                btnEliminar.textContent = 'Eliminar';
+                btnEliminar.style.marginLeft = '10px';
+                btnEliminar.onclick = () => eliminarContacto(contacto.id);
+
+                li.appendChild(btnEliminar);
                 lista.appendChild(li);
             });
         })
-        .catch(error => console.error('Error al cargar contactos:', error));
+        .catch(error => console.error('Error:', error));
+}
+
+function eliminarContacto(id) {
+    if (confirm(`¿Eliminar contacto con ID: ${id}?`)) {
+        fetch(`http://127.0.0.1:8000/contactos/${id}`, {
+            method: 'DELETE'
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            cargarContactos();
+        })
+        .catch(error => console.error('Error:', error));
+    }
 }
 
 cargarContactos();

@@ -1,3 +1,6 @@
 
 asdf,adfa,df,asdf
 asdf,adfa,df,asdf
+Joseph,Amaya,314559345,Jaamaya@gmail.com
+Sergio,Tarrifa,314559445,Starrifa@gmail.com
+Julian,Santos,314559965,Jasantos@gmail.com

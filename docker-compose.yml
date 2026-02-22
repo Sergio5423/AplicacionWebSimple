@@ -1,12 +1,14 @@
 services:
  backend:
   build: ./backend
+  image: sergio5212/api-web-simple:v1
   container_name: api-python-contactos
   ports:
    - "8000:8000"
 
  frontend:
   build: ./frontend
+  image: sergio5212/aplicacion-web-simple:v1
   container_name: web-front-contactos
   ports:
    - "80:80"

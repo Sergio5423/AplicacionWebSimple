@@ -1,17 +1,22 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+import uuid
+from fastapi import FastAPI, Depends
+from sqlalchemy.orm import Session
+from database import Base, engine, SessionLocal
+from models import Contacto
 from pydantic import BaseModel
-import os
-import uuid  # Librería para generar IDs únicos
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# Crear tablas en la BD si no existen
+Base.metadata.create_all(bind=engine)
+
+# Dependencia para obtener sesión
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 class Contact(BaseModel):
     nombre: str
@@ -19,48 +24,31 @@ class Contact(BaseModel):
     telefono: str
     correo: str
 
-def save(contacto: Contact):
-    os.makedirs("contactos", exist_ok=True)
-    contact_id = str(uuid.uuid4())[:8] 
-    with open("contactos/contactos.txt", "a") as f:
-        f.write(f"{contact_id},{contacto.nombre},{contacto.apellido},{contacto.telefono},{contacto.correo}\n")
-    return contact_id
-
 @app.post("/contactos/")
-async def create_contact(contacto: Contact):
-    id_generado = save(contacto)
-    return {"message": "Contacto Guardado", "id": id_generado}
+async def create_contact(contacto: Contact, db: Session = Depends(get_db)):
+    contact_id = str(uuid.uuid4())[:8]
+    nuevo = Contacto(
+        id=contact_id,
+        nombre=contacto.nombre,
+        apellido=contacto.apellido,
+        telefono=contacto.telefono,
+        correo=contacto.correo
+    )
+    db.add(nuevo)
+    db.commit()
+    db.refresh(nuevo)
+    return {"message": "Contacto Guardado", "id": nuevo.id}
 
 @app.get("/contactos/")
-async def get_contactos():
-    contactos_lista = []
-    if os.path.exists("contactos/contactos.txt"):
-        with open("contactos/contactos.txt", "r") as f:
-            for linea in f:
-                if linea.strip():
-                    partes = linea.strip().split(",")
-                    # Ahora el orden es: id, nombre, apellido, tel, correo
-                    contactos_lista.append({
-                        "id": partes[0],
-                        "nombre": partes[1],
-                        "apellido": partes[2],
-                        "telefono": partes[3],
-                        "correo": partes[4]
-                    })
-    return contactos_lista
+async def get_contactos(db: Session = Depends(get_db)):
+    contactos = db.query(Contacto).all()
+    return contactos
 
 @app.delete("/contactos/{contact_id}")
-async def delete_contact(contact_id: str):
-    if not os.path.exists("contactos/contactos.txt"):
-        return {"error": "Archivo no encontrado"}
-
-    with open("contactos/contactos.txt", "r") as f:
-        lineas = f.readlines()
-
-    # Filtramos por el ID (índice 0)
-    nuevas_lineas = [l for l in lineas if l.strip() and l.strip().split(",")[0] != contact_id]
-
-    with open("contactos/contactos.txt", "w") as f:
-        f.writelines(nuevas_lineas)
-
+async def delete_contact(contact_id: str, db: Session = Depends(get_db)):
+    contacto = db.query(Contacto).filter(Contacto.id == contact_id).first()
+    if not contacto:
+        return {"error": "Contacto no encontrado"}
+    db.delete(contacto)
+    db.commit()
     return {"message": "Contacto eliminado correctamente"}

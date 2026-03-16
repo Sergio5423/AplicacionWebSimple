@@ -1,10 +1,12 @@
+const url = 'http://LoadBalancer5212-511807409.us-east-1.elb.amazonaws.com/contactos/'
+
 document.getElementById('btnEnviar').addEventListener('click', function () {
     const nombre = document.getElementsByName('nombre')[0].value;
     const apellido = document.getElementsByName('apellido')[0].value;
     const telefono = document.getElementsByName('telefono')[0].value;
     const correo = document.getElementsByName('correo')[0].value;
 
-    fetch('http://127.0.0.1:8000/contactos/', {
+    fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nombre, apellido, telefono, correo })
@@ -20,16 +22,23 @@ document.getElementById('btnEnviar').addEventListener('click', function () {
 document.getElementById('btnCargar').addEventListener('click', cargarContactos);
 
 function cargarContactos() {
-    fetch('http://127.0.0.1:8000/contactos/')
+    fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log("Respuesta del backend:", data);
+
+            if (!Array.isArray(data)) {
+                console.error("La respuesta no es un array:", data);
+                return;
+            }
+
             const lista = document.getElementById('listaContactos');
             lista.innerHTML = '';
 
             data.forEach(contacto => {
                 const li = document.createElement('li');
                 li.style.marginBottom = "10px";
-                li.textContent = `[ID: ${contacto.id}] ${contacto.nombre} ${contacto.apellido} - ${contacto.telefono}`;
+                li.textContent = `[ID: ${contacto.id}] ${contacto.nombre} ${contacto.apellido} - ${contacto.telefono} - ${contacto.correo}`;
 
                 const btnEliminar = document.createElement('button');
                 btnEliminar.textContent = 'Eliminar';
@@ -45,7 +54,7 @@ function cargarContactos() {
 
 function eliminarContacto(id) {
     if (confirm(`¿Eliminar contacto con ID: ${id}?`)) {
-        fetch(`http://127.0.0.1:8000/contactos/${id}`, {
+        fetch(`${url}${id}`, {
             method: 'DELETE'
         })
         .then(response => response.json())

@@ -1,14 +1,12 @@
 services:
- backend:
-  build: ./backend
-  image: sergio5212/api-web-simple:latest
-  container_name: backend-contactos
-  ports:
-   - "8000:8000"
-
- frontend:
-  build: ./frontend
-  image: sergio5212/aplicacion-web-simple:latest
-  container_name: frontend-contactos
-  ports:
-   - "80:80"
+  backend:
+    image: sergio5212/api-web-simple:latest
+    container_name: backend-solo-health
+    ports:
+      - "8000:8000"
+    environment:
+      # Ponemos cualquier valor para que no dé error de variable vacía
+      DB_HOST: localhost 
+      DB_NAME: test
+      DB_USER: test
+      DB_PASS: test

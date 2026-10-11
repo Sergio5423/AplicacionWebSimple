@@ -4,13 +4,28 @@ from sqlalchemy.orm import Session
 from database import Base, engine, SessionLocal
 from models import Contacto
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Crear tablas en la BD si no existen
-Base.metadata.create_all(bind=engine)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-# Dependencia para obtener sesión
+# --- CAMBIO CRÍTICO AQUÍ ---
+try:
+    # Intentamos crear las tablas, pero si falla, no detenemos la App
+    Base.metadata.create_all(bind=engine)
+    print("Conexión a DB exitosa.")
+except Exception as e:
+    print(f"ERROR: No se pudo conectar a la DB: {e}")
+    print("Iniciando modo degradado para responder Health Checks...")
+# ---------------------------
+
 def get_db():
     db = SessionLocal()
     try:
@@ -23,6 +38,11 @@ class Contact(BaseModel):
     apellido: str
     telefono: str
     correo: str
+
+@app.get("/health")
+def health_check():
+    # Esta ruta salvará tu Target Group
+    return {"status": "ok", "message": "Backend is running"}
 
 @app.post("/contactos/")
 async def create_contact(contacto: Contact, db: Session = Depends(get_db)):

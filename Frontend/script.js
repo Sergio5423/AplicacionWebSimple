@@ -1,4 +1,4 @@
-const url = 'http://LoadBalancer5212-511807409.us-east-1.elb.amazonaws.com/contactos/'
+const url = '/api/contactos/'
 
 document.getElementById('btnEnviar').addEventListener('click', function () {
     const nombre = document.getElementsByName('nombre')[0].value;
@@ -14,7 +14,7 @@ document.getElementById('btnEnviar').addEventListener('click', function () {
     .then(response => response.json())
     .then(data => {
         alert('Éxito: ' + data.message);
-        cargarContactos(); // Recargar tras guardar
+        cargarContactos();
     })
     .catch(error => console.error('Error:', error));
 });

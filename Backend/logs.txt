@@ -1,0 +1,280 @@
+----------------------------------------
+/var/log/web.stdout.log
+----------------------------------------
+Mar 22 22:40:33 ip-10-0-2-30 web[3743]: [2026-03-22 22:40:33 +0000] [3743] [INFO] Listening at: http://127.0.0.1:8000 (3743)
+Mar 22 22:40:33 ip-10-0-2-30 web[3743]: [2026-03-22 22:40:33 +0000] [3743] [INFO] Using worker: uvicorn.workers.UvicornWorker
+Mar 22 22:40:33 ip-10-0-2-30 web[3747]: [2026-03-22 22:40:33 +0000] [3747] [INFO] Booting worker with pid: 3747
+Mar 22 22:40:33 ip-10-0-2-30 web[3749]: [2026-03-22 22:40:33 +0000] [3749] [INFO] Booting worker with pid: 3749
+Mar 22 22:40:33 ip-10-0-2-30 web[3750]: [2026-03-22 22:40:33 +0000] [3750] [INFO] Booting worker with pid: 3750
+Mar 22 22:40:34 ip-10-0-2-30 web[3751]: [2026-03-22 22:40:34 +0000] [3751] [INFO] Booting worker with pid: 3751
+Mar 22 22:40:35 ip-10-0-2-30 web[3747]: [2026-03-22 22:40:35 +0000] [3747] [INFO] Started server process [3747]
+Mar 22 22:40:35 ip-10-0-2-30 web[3747]: [2026-03-22 22:40:35 +0000] [3747] [INFO] Waiting for application startup.
+Mar 22 22:40:35 ip-10-0-2-30 web[3747]: [2026-03-22 22:40:35 +0000] [3747] [INFO] Application startup complete.
+Mar 22 22:40:35 ip-10-0-2-30 web[3749]: [2026-03-22 22:40:35 +0000] [3749] [INFO] Started server process [3749]
+Mar 22 22:40:35 ip-10-0-2-30 web[3749]: [2026-03-22 22:40:35 +0000] [3749] [INFO] Waiting for application startup.
+Mar 22 22:40:35 ip-10-0-2-30 web[3749]: [2026-03-22 22:40:35 +0000] [3749] [INFO] Application startup complete.
+Mar 22 22:40:35 ip-10-0-2-30 web[3750]: [2026-03-22 22:40:35 +0000] [3750] [INFO] Started server process [3750]
+Mar 22 22:40:35 ip-10-0-2-30 web[3750]: [2026-03-22 22:40:35 +0000] [3750] [INFO] Waiting for application startup.
+Mar 22 22:40:35 ip-10-0-2-30 web[3750]: [2026-03-22 22:40:35 +0000] [3750] [INFO] Application startup complete.
+Mar 22 22:40:35 ip-10-0-2-30 web[3751]: [2026-03-22 22:40:35 +0000] [3751] [INFO] Started server process [3751]
+Mar 22 22:40:35 ip-10-0-2-30 web[3751]: [2026-03-22 22:40:35 +0000] [3751] [INFO] Waiting for application startup.
+Mar 22 22:40:35 ip-10-0-2-30 web[3751]: [2026-03-22 22:40:35 +0000] [3751] [INFO] Application startup complete.
+Mar 22 23:05:38 ip-10-0-2-30 web[3743]: [2026-03-22 23:05:38 +0000] [3743] [INFO] Handling signal: term
+Mar 22 23:05:38 ip-10-0-2-30 web[3749]: [2026-03-22 23:05:38 +0000] [3749] [INFO] Shutting down
+Mar 22 23:05:38 ip-10-0-2-30 web[3750]: [2026-03-22 23:05:38 +0000] [3750] [INFO] Shutting down
+Mar 22 23:05:38 ip-10-0-2-30 web[3751]: [2026-03-22 23:05:38 +0000] [3751] [INFO] Shutting down
+Mar 22 23:05:38 ip-10-0-2-30 web[3747]: [2026-03-22 23:05:38 +0000] [3747] [INFO] Shutting down
+Mar 22 23:05:38 ip-10-0-2-30 web[3749]: [2026-03-22 23:05:38 +0000] [3749] [INFO] Waiting for application shutdown.
+Mar 22 23:05:38 ip-10-0-2-30 web[3749]: [2026-03-22 23:05:38 +0000] [3749] [INFO] Application shutdown complete.
+Mar 22 23:05:38 ip-10-0-2-30 web[3749]: [2026-03-22 23:05:38 +0000] [3749] [INFO] Finished server process [3749]
+Mar 22 23:05:38 ip-10-0-2-30 web[3750]: [2026-03-22 23:05:38 +0000] [3750] [INFO] Waiting for application shutdown.
+Mar 22 23:05:38 ip-10-0-2-30 web[3750]: [2026-03-22 23:05:38 +0000] [3750] [INFO] Application shutdown complete.
+Mar 22 23:05:38 ip-10-0-2-30 web[3750]: [2026-03-22 23:05:38 +0000] [3750] [INFO] Finished server process [3750]
+Mar 22 23:05:38 ip-10-0-2-30 web[3751]: [2026-03-22 23:05:38 +0000] [3751] [INFO] Waiting for application shutdown.
+Mar 22 23:05:38 ip-10-0-2-30 web[3751]: [2026-03-22 23:05:38 +0000] [3751] [INFO] Application shutdown complete.
+Mar 22 23:05:38 ip-10-0-2-30 web[3747]: [2026-03-22 23:05:38 +0000] [3747] [INFO] Waiting for application shutdown.
+Mar 22 23:05:38 ip-10-0-2-30 web[3751]: [2026-03-22 23:05:38 +0000] [3751] [INFO] Finished server process [3751]
+Mar 22 23:05:38 ip-10-0-2-30 web[3747]: [2026-03-22 23:05:38 +0000] [3747] [INFO] Application shutdown complete.
+Mar 22 23:05:38 ip-10-0-2-30 web[3747]: [2026-03-22 23:05:38 +0000] [3747] [INFO] Finished server process [3747]
+Mar 22 23:05:38 ip-10-0-2-30 web[3743]: [2026-03-22 23:05:38 +0000] [3743] [INFO] Worker (pid:3747) was sent SIGTERM!
+Mar 22 23:05:38 ip-10-0-2-30 web[3743]: [2026-03-22 23:05:38 +0000] [3743] [INFO] Worker (pid:3749) was sent SIGTERM!
+Mar 22 23:05:38 ip-10-0-2-30 web[3743]: [2026-03-22 23:05:38 +0000] [3743] [INFO] Worker (pid:3750) was sent SIGTERM!
+Mar 22 23:05:38 ip-10-0-2-30 web[3743]: [2026-03-22 23:05:38 +0000] [3743] [INFO] Worker (pid:3751) was sent SIGTERM!
+Mar 22 23:05:38 ip-10-0-2-30 web[3743]: [2026-03-22 23:05:38 +0000] [3743] [INFO] Shutting down: Master
+Mar 22 23:05:40 ip-10-0-2-30 web[5160]: [2026-03-22 23:05:40 +0000] [5160] [INFO] Starting gunicorn 25.0.3
+Mar 22 23:05:40 ip-10-0-2-30 web[5160]: [2026-03-22 23:05:40 +0000] [5160] [INFO] Listening at: http://127.0.0.1:8000 (5160)
+Mar 22 23:05:40 ip-10-0-2-30 web[5160]: [2026-03-22 23:05:40 +0000] [5160] [INFO] Using worker: uvicorn.workers.UvicornWorker
+Mar 22 23:05:40 ip-10-0-2-30 web[5164]: [2026-03-22 23:05:40 +0000] [5164] [INFO] Booting worker with pid: 5164
+Mar 22 23:05:40 ip-10-0-2-30 web[5165]: [2026-03-22 23:05:40 +0000] [5165] [INFO] Booting worker with pid: 5165
+Mar 22 23:05:40 ip-10-0-2-30 web[5166]: [2026-03-22 23:05:40 +0000] [5166] [INFO] Booting worker with pid: 5166
+Mar 22 23:05:40 ip-10-0-2-30 web[5167]: [2026-03-22 23:05:40 +0000] [5167] [INFO] Booting worker with pid: 5167
+Mar 22 23:05:42 ip-10-0-2-30 web[5164]: [2026-03-22 23:05:42 +0000] [5164] [INFO] Started server process [5164]
+Mar 22 23:05:42 ip-10-0-2-30 web[5164]: [2026-03-22 23:05:42 +0000] [5164] [INFO] Waiting for application startup.
+Mar 22 23:05:42 ip-10-0-2-30 web[5164]: [2026-03-22 23:05:42 +0000] [5164] [INFO] Application startup complete.
+Mar 22 23:05:42 ip-10-0-2-30 web[5165]: [2026-03-22 23:05:42 +0000] [5165] [INFO] Started server process [5165]
+Mar 22 23:05:42 ip-10-0-2-30 web[5165]: [2026-03-22 23:05:42 +0000] [5165] [INFO] Waiting for application startup.
+Mar 22 23:05:42 ip-10-0-2-30 web[5165]: [2026-03-22 23:05:42 +0000] [5165] [INFO] Application startup complete.
+Mar 22 23:05:42 ip-10-0-2-30 web[5166]: [2026-03-22 23:05:42 +0000] [5166] [INFO] Started server process [5166]
+Mar 22 23:05:42 ip-10-0-2-30 web[5166]: [2026-03-22 23:05:42 +0000] [5166] [INFO] Waiting for application startup.
+Mar 22 23:05:42 ip-10-0-2-30 web[5166]: [2026-03-22 23:05:42 +0000] [5166] [INFO] Application startup complete.
+Mar 22 23:05:42 ip-10-0-2-30 web[5167]: [2026-03-22 23:05:42 +0000] [5167] [INFO] Started server process [5167]
+Mar 22 23:05:42 ip-10-0-2-30 web[5167]: [2026-03-22 23:05:42 +0000] [5167] [INFO] Waiting for application startup.
+Mar 22 23:05:42 ip-10-0-2-30 web[5167]: [2026-03-22 23:05:42 +0000] [5167] [INFO] Application startup complete.
+Mar 22 23:08:46 ip-10-0-2-30 web[5160]: [2026-03-22 23:08:46 +0000] [5160] [INFO] Handling signal: term
+Mar 22 23:08:46 ip-10-0-2-30 web[5167]: [2026-03-22 23:08:46 +0000] [5167] [INFO] Shutting down
+Mar 22 23:08:46 ip-10-0-2-30 web[5165]: [2026-03-22 23:08:46 +0000] [5165] [INFO] Shutting down
+Mar 22 23:08:46 ip-10-0-2-30 web[5166]: [2026-03-22 23:08:46 +0000] [5166] [INFO] Shutting down
+Mar 22 23:08:47 ip-10-0-2-30 web[5164]: [2026-03-22 23:08:47 +0000] [5164] [INFO] Shutting down
+Mar 22 23:08:47 ip-10-0-2-30 web[5167]: [2026-03-22 23:08:47 +0000] [5167] [INFO] Waiting for application shutdown.
+Mar 22 23:08:47 ip-10-0-2-30 web[5167]: [2026-03-22 23:08:47 +0000] [5167] [INFO] Application shutdown complete.
+Mar 22 23:08:47 ip-10-0-2-30 web[5167]: [2026-03-22 23:08:47 +0000] [5167] [INFO] Finished server process [5167]
+Mar 22 23:08:47 ip-10-0-2-30 web[5165]: [2026-03-22 23:08:47 +0000] [5165] [INFO] Waiting for application shutdown.
+Mar 22 23:08:47 ip-10-0-2-30 web[5165]: [2026-03-22 23:08:47 +0000] [5165] [INFO] Application shutdown complete.
+Mar 22 23:08:47 ip-10-0-2-30 web[5165]: [2026-03-22 23:08:47 +0000] [5165] [INFO] Finished server process [5165]
+Mar 22 23:08:47 ip-10-0-2-30 web[5166]: [2026-03-22 23:08:47 +0000] [5166] [INFO] Waiting for application shutdown.
+Mar 22 23:08:47 ip-10-0-2-30 web[5166]: [2026-03-22 23:08:47 +0000] [5166] [INFO] Application shutdown complete.
+Mar 22 23:08:47 ip-10-0-2-30 web[5166]: [2026-03-22 23:08:47 +0000] [5166] [INFO] Finished server process [5166]
+Mar 22 23:08:47 ip-10-0-2-30 web[5164]: [2026-03-22 23:08:47 +0000] [5164] [INFO] Waiting for application shutdown.
+Mar 22 23:08:47 ip-10-0-2-30 web[5164]: [2026-03-22 23:08:47 +0000] [5164] [INFO] Application shutdown complete.
+Mar 22 23:08:47 ip-10-0-2-30 web[5164]: [2026-03-22 23:08:47 +0000] [5164] [INFO] Finished server process [5164]
+Mar 22 23:08:47 ip-10-0-2-30 web[5160]: [2026-03-22 23:08:47 +0000] [5160] [INFO] Worker (pid:5164) was sent SIGTERM!
+Mar 22 23:08:47 ip-10-0-2-30 web[5160]: [2026-03-22 23:08:47 +0000] [5160] [INFO] Worker (pid:5165) was sent SIGTERM!
+Mar 22 23:08:47 ip-10-0-2-30 web[5160]: [2026-03-22 23:08:47 +0000] [5160] [INFO] Worker (pid:5166) was sent SIGTERM!
+Mar 22 23:08:47 ip-10-0-2-30 web[5160]: [2026-03-22 23:08:47 +0000] [5160] [INFO] Worker (pid:5167) was sent SIGTERM!
+Mar 22 23:08:47 ip-10-0-2-30 web[5160]: [2026-03-22 23:08:47 +0000] [5160] [INFO] Shutting down: Master
+Mar 22 23:08:48 ip-10-0-2-30 web[5730]: [2026-03-22 23:08:48 +0000] [5730] [INFO] Starting gunicorn 25.0.3
+Mar 22 23:08:48 ip-10-0-2-30 web[5730]: [2026-03-22 23:08:48 +0000] [5730] [INFO] Listening at: http://127.0.0.1:8000 (5730)
+Mar 22 23:08:48 ip-10-0-2-30 web[5730]: [2026-03-22 23:08:48 +0000] [5730] [INFO] Using worker: uvicorn.workers.UvicornWorker
+Mar 22 23:08:48 ip-10-0-2-30 web[5734]: [2026-03-22 23:08:48 +0000] [5734] [INFO] Booting worker with pid: 5734
+Mar 22 23:08:48 ip-10-0-2-30 web[5735]: [2026-03-22 23:08:48 +0000] [5735] [INFO] Booting worker with pid: 5735
+Mar 22 23:08:48 ip-10-0-2-30 web[5736]: [2026-03-22 23:08:48 +0000] [5736] [INFO] Booting worker with pid: 5736
+Mar 22 23:08:48 ip-10-0-2-30 web[5737]: [2026-03-22 23:08:48 +0000] [5737] [INFO] Booting worker with pid: 5737
+Mar 22 23:08:50 ip-10-0-2-30 web[5734]: [2026-03-22 23:08:50 +0000] [5734] [INFO] Started server process [5734]
+Mar 22 23:08:50 ip-10-0-2-30 web[5734]: [2026-03-22 23:08:50 +0000] [5734] [INFO] Waiting for application startup.
+Mar 22 23:08:50 ip-10-0-2-30 web[5734]: [2026-03-22 23:08:50 +0000] [5734] [INFO] Application startup complete.
+Mar 22 23:08:50 ip-10-0-2-30 web[5735]: [2026-03-22 23:08:50 +0000] [5735] [INFO] Started server process [5735]
+Mar 22 23:08:50 ip-10-0-2-30 web[5735]: [2026-03-22 23:08:50 +0000] [5735] [INFO] Waiting for application startup.
+Mar 22 23:08:50 ip-10-0-2-30 web[5735]: [2026-03-22 23:08:50 +0000] [5735] [INFO] Application startup complete.
+Mar 22 23:08:50 ip-10-0-2-30 web[5736]: [2026-03-22 23:08:50 +0000] [5736] [INFO] Started server process [5736]
+Mar 22 23:08:50 ip-10-0-2-30 web[5736]: [2026-03-22 23:08:50 +0000] [5736] [INFO] Waiting for application startup.
+Mar 22 23:08:50 ip-10-0-2-30 web[5736]: [2026-03-22 23:08:50 +0000] [5736] [INFO] Application startup complete.
+Mar 22 23:08:50 ip-10-0-2-30 web[5737]: [2026-03-22 23:08:50 +0000] [5737] [INFO] Started server process [5737]
+Mar 22 23:08:50 ip-10-0-2-30 web[5737]: [2026-03-22 23:08:50 +0000] [5737] [INFO] Waiting for application startup.
+Mar 22 23:08:50 ip-10-0-2-30 web[5737]: [2026-03-22 23:08:50 +0000] [5737] [INFO] Application startup complete.
+
+
+----------------------------------------
+/var/log/eb-engine.log
+----------------------------------------
+2026/03/22 23:08:46.168409 [INFO] Executing instruction: stop X-Ray
+2026/03/22 23:08:46.168412 [INFO] stop X-Ray ...
+2026/03/22 23:08:46.168421 [INFO] Running command: systemctl show -p PartOf xray.service
+2026/03/22 23:08:46.182214 [WARN] stopProcess Warning: process xray is not registered 
+2026/03/22 23:08:46.182247 [INFO] Running command: systemctl stop xray.service
+2026/03/22 23:08:46.196422 [INFO] Executing instruction: stop proxy
+2026/03/22 23:08:46.196466 [INFO] Running command: systemctl show -p PartOf httpd.service
+2026/03/22 23:08:46.209945 [WARN] deregisterProcess Warning: process httpd is not registered, skipping...
+
+2026/03/22 23:08:46.210140 [INFO] Running command: systemctl show -p PartOf nginx.service
+2026/03/22 23:08:46.222122 [INFO] Running command: systemctl is-active nginx.service
+2026/03/22 23:08:46.229865 [INFO] Running command: systemctl show -p PartOf nginx.service
+2026/03/22 23:08:46.238895 [INFO] Running command: systemctl stop nginx.service
+2026/03/22 23:08:46.446334 [INFO] Running command: systemctl disable nginx.service
+2026/03/22 23:08:46.684546 [INFO] Running command: systemctl daemon-reload
+2026/03/22 23:08:46.936283 [INFO] Running command: systemctl reset-failed
+2026/03/22 23:08:46.944776 [INFO] Executing instruction: FlipApplication
+2026/03/22 23:08:46.944802 [INFO] Fetching environment variables...
+2026/03/22 23:08:46.944983 [INFO] Purge old process...
+2026/03/22 23:08:46.945003 [INFO] Running command: systemctl stop eb-app.target
+2026/03/22 23:08:46.954932 [INFO] Running command: systemctl show -p ConsistsOf eb-app.target | cut -d= -f2
+2026/03/22 23:08:46.966588 [INFO] web.service
+
+2026/03/22 23:08:46.966612 [INFO] deregistering process: web
+2026/03/22 23:08:46.966626 [INFO] Running command: systemctl show -p PartOf web.service
+2026/03/22 23:08:46.977332 [INFO] Running command: systemctl is-active web.service
+2026/03/22 23:08:46.984964 [INFO] Running command: systemctl disable web.service
+2026/03/22 23:08:47.252045 [INFO] Removed "/etc/systemd/system/multi-user.target.wants/web.service".
+
+2026/03/22 23:08:47.252130 [INFO] Running command: systemctl daemon-reload
+2026/03/22 23:08:47.536563 [INFO] Running command: systemctl reset-failed
+2026/03/22 23:08:47.585514 [INFO] Running command: systemctl is-active web.service
+2026/03/22 23:08:47.593701 [INFO] Process web has been fully terminated
+2026/03/22 23:08:47.593725 [INFO] All processes have been fully terminated
+2026/03/22 23:08:47.593729 [INFO] Removing /var/app/current/ if it exists
+2026/03/22 23:08:47.644721 [INFO] Renaming /var/app/staging/ to /var/app/current/
+2026/03/22 23:08:47.645037 [INFO] Register application processes...
+2026/03/22 23:08:47.645073 [INFO] Registering the proc: web
+
+2026/03/22 23:08:47.645086 [INFO] Running command: systemctl show -p PartOf web.service
+2026/03/22 23:08:47.665609 [INFO] Running command: systemctl daemon-reload
+2026/03/22 23:08:47.912782 [INFO] Running command: systemctl reset-failed
+2026/03/22 23:08:47.921204 [INFO] Running command: systemctl is-enabled eb-app.target
+2026/03/22 23:08:47.928822 [INFO] Running command: systemctl enable eb-app.target
+2026/03/22 23:08:48.194672 [INFO] Running command: systemctl start eb-app.target
+2026/03/22 23:08:48.203709 [INFO] Running command: systemctl enable web.service
+2026/03/22 23:08:48.454751 [INFO] Created symlink /etc/systemd/system/multi-user.target.wants/web.service â†’ /etc/systemd/system/web.service.
+
+2026/03/22 23:08:48.454796 [INFO] Running command: systemctl show -p PartOf web.service
+2026/03/22 23:08:48.465637 [INFO] Running command: systemctl is-active web.service
+2026/03/22 23:08:48.474070 [INFO] Running command: systemctl start web.service
+2026/03/22 23:08:50.543969 [INFO] Executing instruction: start X-Ray
+2026/03/22 23:08:50.543979 [INFO] X-Ray is not enabled.
+2026/03/22 23:08:50.543984 [INFO] Executing instruction: start proxy with new configuration
+2026/03/22 23:08:50.544009 [INFO] Running command: /usr/sbin/nginx -t -c /var/proxy/staging/nginx/nginx.conf
+2026/03/22 23:08:50.578426 [INFO] nginx: [warn] could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+nginx: the configuration file /var/proxy/staging/nginx/nginx.conf syntax is ok
+nginx: configuration file /var/proxy/staging/nginx/nginx.conf test is successful
+
+2026/03/22 23:08:50.578667 [INFO] Running command: cp -rp /var/proxy/staging/nginx/* /etc/nginx
+2026/03/22 23:08:50.582529 [INFO] Running command: systemctl show -p PartOf nginx.service
+2026/03/22 23:08:50.611720 [INFO] Running command: systemctl daemon-reload
+2026/03/22 23:08:50.862460 [INFO] Running command: systemctl reset-failed
+2026/03/22 23:08:50.871703 [INFO] Running command: systemctl show -p PartOf nginx.service
+2026/03/22 23:08:50.884310 [INFO] Running command: systemctl is-active nginx.service
+2026/03/22 23:08:50.893289 [INFO] Running command: systemctl start nginx.service
+2026/03/22 23:08:51.039215 [INFO] Executing instruction: configureSqsd
+2026/03/22 23:08:51.039232 [INFO] This is a web server environment instance, skip configure sqsd daemon ...
+2026/03/22 23:08:51.039236 [INFO] Executing instruction: startSqsd
+2026/03/22 23:08:51.039239 [INFO] This is a web server environment instance, skip start sqsd daemon ...
+2026/03/22 23:08:51.039243 [INFO] Executing instruction: Track pids in healthd
+2026/03/22 23:08:51.039247 [INFO] This is an enhanced health env...
+2026/03/22 23:08:51.039259 [INFO] Running command: systemctl show -p ConsistsOf aws-eb.target | cut -d= -f2
+2026/03/22 23:08:51.051033 [INFO] nginx.service healthd.service cfn-hup.service
+
+2026/03/22 23:08:51.051062 [INFO] Running command: systemctl show -p ConsistsOf eb-app.target | cut -d= -f2
+2026/03/22 23:08:51.061215 [INFO] web.service
+
+2026/03/22 23:08:51.061444 [INFO] Executing instruction: RunAppDeployPostDeployHooks
+2026/03/22 23:08:51.061455 [INFO] No hooks found in .platform/hooks/postdeploy/, skipping
+2026/03/22 23:08:51.061458 [INFO] Executing cleanup logic
+2026/03/22 23:08:51.061535 [INFO] CommandService Response: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"Engine execution has succeeded.","returncode":0,"events":[{"msg":"Instance deployment used the commands in your 'Procfile' to initiate startup of your application.","timestamp":1774220922950,"severity":"INFO"},{"msg":"Instance deployment completed successfully.","timestamp":1774220931061,"severity":"INFO"}]}]}
+
+2026/03/22 23:08:51.107252 [INFO] Platform Engine finished execution on command: app-deploy
+
+2026/03/22 23:15:45.289222 [INFO] Starting...
+2026/03/22 23:15:45.289273 [INFO] Starting EBPlatform-PlatformEngine
+2026/03/22 23:15:45.289299 [INFO] reading event message file
+2026/03/22 23:15:45.289681 [INFO] Engine received EB command cfn-hup-exec
+
+2026/03/22 23:15:45.362034 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:us-east-2:463310124367:stack/awseb-e-ispn3cvsys-stack/8c2d5e00-263d-11f1-9d5d-06d0970a4fcf -r AWSEBAutoScalingGroup --region us-east-2
+2026/03/22 23:15:45.668341 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:us-east-2:463310124367:stack/awseb-e-ispn3cvsys-stack/8c2d5e00-263d-11f1-9d5d-06d0970a4fcf -r AWSEBBeanstalkMetadata --region us-east-2
+2026/03/22 23:15:45.963553 [INFO] checking whether command tail-log is applicable to this instance...
+2026/03/22 23:15:45.963566 [INFO] this command is applicable to the instance, thus instance should execute command
+2026/03/22 23:15:45.963569 [INFO] Engine command: (tail-log)
+
+2026/03/22 23:15:45.963635 [INFO] Executing instruction: GetTailLogs
+2026/03/22 23:15:45.963639 [INFO] Tail Logs...
+2026/03/22 23:15:45.964021 [INFO] Running command: tail -n 100 /var/log/web.stdout.log
+2026/03/22 23:15:45.966318 [INFO] Running command: tail -n 100 /var/log/eb-engine.log
+
+
+----------------------------------------
+/var/log/nginx/access.log
+----------------------------------------
+190.255.92.129 - - [22/Mar/2026:22:35:08 +0000] "GET / HTTP/1.1" 500 141 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:35:08 +0000] "GET / HTTP/1.1" 500 141 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:35:08 +0000] "GET /favicon.ico HTTP/1.1" 500 141 "http://backend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:42:13 +0000] "GET / HTTP/1.1" 404 22 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:42:19 +0000] "GET /contactos HTTP/1.1" 307 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:42:19 +0000] "GET /contactos/ HTTP/1.1" 200 2 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:59:36 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:59:41 +0000] "OPTIONS /contactos/ HTTP/1.1" 405 31 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:59:43 +0000] "OPTIONS /contactos/ HTTP/1.1" 405 31 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:59:44 +0000] "OPTIONS /contactos/ HTTP/1.1" 405 31 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:59:45 +0000] "OPTIONS /contactos/ HTTP/1.1" 405 31 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:22:59:45 +0000] "OPTIONS /contactos/ HTTP/1.1" 405 31 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:06:11 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:06:17 +0000] "OPTIONS /contactos/ HTTP/1.1" 400 22 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:06:17 +0000] "OPTIONS /contactos/ HTTP/1.1" 400 22 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:06:20 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:07:08 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+20.171.8.181 - - [22/Mar/2026:23:07:34 +0000] "GET /actuator/health HTTP/1.1" 404 22 "-" "Mozilla/5.0 zgrab/0.x" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:33 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:43 +0000] "OPTIONS /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:43 +0000] "POST /contactos/ HTTP/1.1" 200 47 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:44 +0000] "GET /contactos/ HTTP/1.1" 200 83 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:55 +0000] "GET /contactos/ HTTP/1.1" 200 83 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:58 +0000] "OPTIONS /contactos/fa50340a HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:09:58 +0000] "DELETE /contactos/fa50340a HTTP/1.1" 200 46 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+190.255.92.129 - - [22/Mar/2026:23:10:01 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:13:57 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:14:12 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:14:27 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:14:42 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:14:57 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.1.165 - - [22/Mar/2026:23:15:00 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:15:12 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.1.165 - - [22/Mar/2026:23:15:15 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:15:28 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.1.165 - - [22/Mar/2026:23:15:30 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "OPTIONS /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "OPTIONS /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "OPTIONS /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "GET /contactos/ HTTP/1.1" 200 2 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "POST /contactos/ HTTP/1.1" 200 47 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "POST /contactos/ HTTP/1.1" 200 47 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:36 +0000] "POST /contactos/ HTTP/1.1" 200 47 "http://frontend-agenda-env.us-east-2.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0" "190.255.92.129"
+10.0.2.6 - - [22/Mar/2026:23:15:43 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+10.0.1.165 - - [22/Mar/2026:23:15:45 +0000] "GET / HTTP/1.1" 404 22 "-" "ELB-HealthChecker/2.0" "-"
+
+
+----------------------------------------
+/var/log/nginx/error.log
+----------------------------------------
+2026/03/22 22:24:01 [warn] 2119#2119: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:24:02 [warn] 2158#2158: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:24:02 [warn] 2159#2159: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:31:56 [warn] 2953#2953: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:31:56 [warn] 2986#2986: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:31:56 [warn] 2987#2987: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:40:35 [warn] 3752#3752: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:40:36 [warn] 3785#3785: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 22:40:36 [warn] 3786#3786: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 23:05:42 [warn] 5168#5168: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 23:05:42 [warn] 5201#5201: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 23:05:42 [warn] 5202#5202: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 23:08:50 [warn] 5738#5738: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 23:08:50 [warn] 5771#5771: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2026/03/22 23:08:51 [warn] 5772#5772: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+
+
